@@ -52,7 +52,6 @@ header {
 header h1 {
 	text-align: center;
 	margin: 10px;
-	width: 100%;
 	padding: 38px 0;
 	border-bottom: 3px solid #77a466;
 	
@@ -63,7 +62,6 @@ header h1 span {
 }
 
 header nav {
-	width: 100%;
 	text-align: center;
 	line-height: 2em;	
 	
@@ -72,16 +70,11 @@ header nav ul li {
 	list-style: none;
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 14px;
-	padding: 0 10px;
-	
 	
 }
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
-
-	
 }
 
 /*The widths are in a percentage!*/
@@ -102,11 +95,10 @@ header nav ul li a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	max-width: 90%;
 		
 }
 .main-image img {
-	width: 95%;
+	width: 100%;
 	border: 3px solid #77a466;
 	display: flex;
 	justify-content: center;
@@ -116,20 +108,17 @@ header nav ul li a{
 .main-title {
 	height: auto;
 	float: left;
-	width: 85%;
 	
 }
 .main-title h3 {
 	text-align: left;
-	padding: 5px 0;
 	color: #77a466;
 	text-align: left;
 }
 
 .main-title p {
-	padding: 0;
-	font-size: 16px;
-	line-height: 25px;
+	font-size: 1em;
+	line-height: 1.5em;
 }
 
 .section-one,
@@ -138,32 +127,26 @@ header nav ul li a{
 	width: 85%;
 	height: auto;
 	float: left;
-	border-top: 1px solid #eee;
-	
-}
-
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+	border-top: 1px solid #eee;	
 }
 
 .menu {
-	list-style: none;
-	
+	list-style: none;	
 }
 .menu li {
 	color:#77a466;
+	line-height: 2em;
 }
 
 .reviews {
 	color: #333;
-	font-size: 16px;
-	line-height: 21px;
+	font-size: 1em;
+	line-height: 1.5em;
 }
 
 .address {
-	font-size: 16px;
-	line-height: 24px;
+	font-size:1em;
+	line-height: 2em;
 }
 
 /*The widths are in a percentage!*/
@@ -182,4 +165,127 @@ footer span {
 	color: #77a466;
 	font-size: 14px;
 }
+
+/* ===== breakpoints ===== */
+
+/* - - - - TABLET - - - - */
+
+@media all and (min-width: 768px) {
+	.container {
+		max-width: 960px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row wrap;
+	}
+
+	.main-title p	{
+		padding: 0;
+		
+	}
+	.menu {
+		list-style: none;
+		padding: 0;
+	}
+	.menu li {
+		padding: 10px 0;
+		color:#77a466;
+	
+	}
+	.bottom-section {
+		border-top: 1px solid #eee;
+	}
+	
+	.section-three {
+		justify-items: center;
+		display: flex;
+		align-content: right;
+		flex-wrap: wrap;
+		align-items: flex-end;
+		padding-bottom: 45px;
+	}
+	
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		margin-top: 35px;
+	}
+
+	.section-two h4 { 
+		padding: 10px 30px;
+	}
+	
+ 		
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 33.234%;
+		height: auto;
+		float: left;
+		border-top: none;
+
+
+	}
+}
+
+/* - - - - DESKTOP - - - - */
+
+@media all and (min-width: 1200px) {
+	.container {
+		max-width: 1200px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row;
+		flex-wrap: wrap;
+		
+	}
+	
+	header nav {
+		float: right;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		align-content: center;
+		margin-top: 35px;
+	
+	}
+	
+	header nav ul li {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 1em;
+		padding: 0 10px;
+		display: inline;
+		text-align: center;
+	}
+		
+	header h1 {
+		float: left;
+		border: none;
+		
+	}
+	.section-three {
+		justify-items: center;
+		display: flex;
+		align-content: right;
+		flex-wrap: wrap;
+		align-items: flex-end;
+		padding-bottom: 45px;
+	}
+
+.section-one h4 {
+	padding: 10px 0;
+}
+
+.section-two h4{
+	padding: 10px 30px;
+}
+.section-three h4 {
+	padding: 10px 30px;
+}
+}
+
 
