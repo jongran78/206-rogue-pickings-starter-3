@@ -9,14 +9,11 @@ body {
 	justify-content: center;
 	align-items: center;
 	font-size: .9rem;
-
-	
-}
-html {
-	font-size: 16px;
 }
 
-.container{
+html {font-size: 16px;}
+
+.container {
 	max-width: 1200px;
 	width: 90%;
 	display: flex;
@@ -37,39 +34,40 @@ h4 {
 }
 
 p {
-	
 	line-height: .5em;
     padding: 0 30px;
 }
 
 /*The widths are in a percentage!*/
-header {
-	width: 100%;	
-}
+header {width: 100%;}
 
 header h1 {
 	text-align: center;
 	margin: 10px;
 	padding: 38px 0;
 	border-bottom: 3px solid #77a466;
-	
+}
 
-}
-header h1 span {
-	color: #77a466;
-}
+header h1 span {color: #77a466;}
 
 header nav {
 	text-align: center;
-	line-height: 2em;	
-	
+	line-height: 2em;
+	max-width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
 }
+
+header nav ul {padding: 0;}
+
 header nav ul li {
 	list-style: none;
 	text-transform: uppercase;
-	font-weight: 700;
-	
+	font-weight: 700;	
 }
+
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
@@ -84,7 +82,6 @@ header nav ul li a{
 	align-items: center;
 	flex-flow: row;
 	flex-wrap: wrap;
-	
 }
 
 .main-image {
@@ -92,9 +89,9 @@ header nav ul li a{
 	float: left;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-		
+	align-items: center;	
 }
+
 .main-image img {
 	width: 100%;
 	border: 3px solid #77a466;
@@ -106,8 +103,8 @@ header nav ul li a{
 .main-title {
 	height: auto;
 	float: left;
-	
 }
+
 .main-title h3 {
 	text-align: left;
 	color: #77a466;
@@ -129,8 +126,10 @@ header nav ul li a{
 }
 
 .menu {
-	list-style: none;	
+	list-style: none;
+	padding: 0;	
 }
+
 .menu li {
 	color:#77a466;
 	line-height: 2em;
@@ -242,9 +241,7 @@ footer span {
 		max-width: 1200px;
 		
 	}
-	body {
-		font-size: 1.1rem;
-	}
+	body {font-size: 1.1rem;}
 	header nav {
 		float: right;
 		display: flex;
@@ -253,7 +250,6 @@ footer span {
 		flex-direction: row;
 		align-content: center;
 		margin-top: 35px;
-	
 	}
 	
 	header nav ul li {
@@ -270,17 +266,13 @@ footer span {
 		border: none;
 	}
 		
-	.section-one h4 {
-		padding: 10px 0;
-	}
+	.section-one h4 {padding: 10px 0;}
 
 		
 	.section-two h4,
 	.section-three h4 {
 		padding: 10px 30px;
-	
 }
-
 
 	.section-one,
 	.section-two,
@@ -289,7 +281,6 @@ footer span {
 		height: 300px;
 		float: left;
 		border-top: 1px solid #eee;
-
 		
 }
 .top-section,
@@ -297,7 +288,7 @@ footer span {
 	margin: 0 auto;
 	clear: both;
 	width: 100%;
-}
+	}
 }
 
 
