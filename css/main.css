@@ -208,9 +208,17 @@ footer span {
 
 	body {font-size: 1.1rem;}
 
-	header nav {
+	header {
+		display: flex;
 		flex-direction: row;
+		flex-flow: row;
+		flex-wrap: nowrap;
+	}
+
+	header nav {
 		margin-top: 35px;
+		text-align: right;
+		justify-content: space-evenly;
 	}
 	
 	header nav ul li {
@@ -220,7 +228,10 @@ footer span {
 		text-align: center;
 	}
 		
-	header h1 {border: none;}
+	header h1 {
+		border: none;
+		justify-content: flex-start;
+	}
 		
 	.section-one h4 {padding: 10px 0;}
 
